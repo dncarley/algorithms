@@ -41,3 +41,13 @@ class BinaryTree:
             if root.right:
                 self.in_order(root.right)
         return self.order
+
+    def post_order(self, root=None):
+        if root:
+            if root.left:
+                self.post_order(root.left)
+            if root.right:
+                self.post_order(root.right)
+            self.order.append(root.data)
+        return self.order
+        

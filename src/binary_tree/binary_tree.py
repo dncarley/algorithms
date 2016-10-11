@@ -50,4 +50,3 @@ class BinaryTree:
                 self.post_order(root.right)
             self.order.append(root.data)
         return self.order
-        

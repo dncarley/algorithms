@@ -32,3 +32,12 @@ class BinaryTree:
             if root.right:
                 self.pre_order(root.right)
         return self.order
+
+    def in_order(self, root=None):
+        if root:
+            if root.left:
+                self.in_order(root.left)
+            self.order.append(root.data)
+            if root.right:
+                self.in_order(root.right)
+        return self.order

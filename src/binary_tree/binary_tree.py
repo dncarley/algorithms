@@ -13,7 +13,7 @@ class BinaryTree:
         self.order = []
 
     def insert(self, root=None, data=None):
-        if self.root == None:
+        if self.root is None:
             self.root = BinaryNode(data)
         else:
             if root is None:

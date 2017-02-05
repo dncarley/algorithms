@@ -27,7 +27,7 @@ def test_quicksort_empty():
 
 
 def test_quicksort_large():
-    array = [random.random() for _ in xrange(100000)]
+    array = [random.random() for _ in range(100000)]
     a_quicksort = quicksort(array)
     a_baseline = sorted(array)
 

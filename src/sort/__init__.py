@@ -1,1 +1,1 @@
-from .sort import *
+from .quicksort import *
